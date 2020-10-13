@@ -1,0 +1,14 @@
+git clone https://github.com/Mr-Bossman/RK3368-linux.git
+
+cd RK3368-linux
+
+git submodule update --init
+
+cd buildroot
+
+make BR2_EXTERNAL=$PWD/../ RK3368_defconfig
+
+make
+
+sudo dd if=output/images/sdcard.img of=/dev/sdX
+
