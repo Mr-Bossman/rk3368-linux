@@ -1,0 +1,13 @@
+diff --git a/arch/arm/dts/Makefile b/arch/arm/dts/Makefile
+index f8f5294..ab73c25 100644
+--- a/arch/arm/dts/Makefile
++++ b/arch/arm/dts/Makefile
+@@ -987,6 +987,8 @@ dtb-$(CONFIG_TARGET_DURIAN) += phytium-durian.dtb
+ 
+ dtb-$(CONFIG_TARGET_PRESIDIO_ASIC) += ca-presidio-engboard.dtb
+ 
++dtb-y += rk3368_uboot.dtb
++
+ targets += $(dtb-y)
+ 
+ # Add any required device tree compiler flags here
