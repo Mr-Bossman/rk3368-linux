@@ -8,7 +8,7 @@ cd buildroot
 
 make BR2_EXTERNAL=$PWD/../ RK3368_defconfig
 
-make
+make -j64
 
-sudo dd if=output/images/sdcard.img of=/dev/sdX
+sudo dd bs=4M status=progress if=output/images/sdcard.img of=/dev/sdX
 
