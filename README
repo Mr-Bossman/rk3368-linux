@@ -10,5 +10,5 @@ make BR2_EXTERNAL=$PWD/../ RK3368_defconfig
 
 make -j64
 
-sudo dd status=progress conv=notrunc,fsync if=output/images/sdcard.img of=/dev/sdd
+sudo dd status=progress bs=4M conv=notrunc,fsync if=output/images/sdcard.img of=/dev/sdd
 
