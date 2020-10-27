@@ -1,1 +1,2 @@
 source "$BR2_EXTERNAL_RK3368_PATH/package/ccminer/Config.in"
+source "$BR2_EXTERNAL_RK3368_PATH/package/CPUFREQ/Config.in"
